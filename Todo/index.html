@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="Main">Tasks</h1>
+    <div class="Container">
+        <form>
+            <input type="text" id="Todo-input" placeholder="add a new todo" autocomplete="off" maxlength="100">
+            <button id="Add-btn">add</button>
+        </form>
+        <ul class="TodoList">
+         
+        </ul>
+        
+    </div>
+    
+        <input type="checkbox"  id="ShareCode">
+        <label for="ShareCode" id="Openbar">Import & Share </label>
+
+    <div id="Share">
+        <label for="ShareCode" id="CloseBtn">×</label>
+        <h2>Share & Import lists</h2>
+        <label for="Code" id="LabelCode">Share Code</label>
+        <input type="text" id="Code" readonly>
+        <label for="Import" id="LabelImport">Import Code</label>
+        <input type="text" autocomplete="off" placeholder="W3sidGV4dCI6InJ0ZXN5dCIsImNvbXB..." id="Import">
+        <button id="Import-btn" onclick="ImportList()">Import</button>
+    </div>
+
+
+
+</body>
+</html>
